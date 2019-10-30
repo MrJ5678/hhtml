@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="http://www.baidu.com" method="POST" enctype="multipart/form-data">
+        <p>
+            用户名: <input type="text" value="" placeholder="请输入用户名" name="txtUsername">
+        </p>
+        <p>
+            用户昵称: <input type="text" disabled name="txtNickname">
+        </p>
+        <p>
+            密码: <input type="password" name="txtUserpwd">
+        </p>
+        <p>
+            <input type="hidden" name="txtUserId" value="1234567890">
+        </p>
+        <p>
+            用户性别:
+            <input type="radio" value="man" name="rdoGender" id="rdoMale" checked>
+            <label for="rdoMale">男</label>
+            <input type="radio" value="woman" name="rdoGender" id="rdoFemale">
+            <label for="rdoFemale">女</label>
+        </p>
+        <p>
+            <fieldset>
+                <legend>用户爱好:</legend>
+                <input type="checkbox" value="eat" name="chkHobby">吃
+                <input type="checkbox" value="drink" name="chkHobby">喝
+                <input type="checkbox" value="play" name="chkHobby" disabled>玩
+            </fieldset>
+        </p>
+        <div>自我介绍</div>
+        <p>
+            <textarea name="txtIntro" cols="30" rows="5">这个人很懒，什么都没有留下。。。
+            </textarea>
+        </p>
+        <p>
+            就业城市:
+            <select name="selCity" size="3" multiple>
+                <option value="BJ" selected>北京</option>
+                <option value="SH">上海</option>
+                <option value="GZ">广州</option>
+                <option value="SZ">深圳</option>
+            </select>
+        </p>
+        <p>
+            选择头像:
+            <input type="file" name="txtUserImg">
+        </p>
+        <p>
+            <input type="submit" value="起飞">
+            <input type="reset" value="归零">
+            <input type="button" value="普通按钮">
+        </p>
+    </form>
+    <hr>
+    <form action="http://www.baidu.com" method="GET">
+        <table width="600px" border="1px" cellspacing="0" cellpadding="3" align="center">
+            <caption>修改个人信息</caption>
+            <tr>
+                <td>姓名:</td>
+                <td>
+                    <input type="text" name="txtUsername" value="">
+                </td>
+                <td rowspan="7" valign="top">各项技能指数</td>
+            </tr>
+            <tr>
+                <td>性别:</td>
+                <td>
+                    <input type="radio" name="ralGendor" value="man" checked>男士
+                    <input type="radio" name="ralGendor" value="woman">女士
+                </td>
+            </tr>
+            <tr>
+                <td>学历:</td>
+                <td>
+                    <select name="selXueli">
+                        <option value="xiaoxue">小学</option>
+                        <option value="zhongzhuan">中专</option>
+                        <option value="gaozhong">高中</option>
+                        <option value="benke">本科</option>
+                        <option value="shuoshi">硕士</option>
+                        <option value="boshi">博士</option>
+                        <option value="other" selected>其它</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>意向工作城市:</td>
+                <td>
+                    <select name="selCity" size="4" multiple>
+                        <option value="BJ">北京</option>
+                        <option value="SH">上海</option>
+                        <option value="GZ">广州</option>
+                        <option value="SZ">深圳</option>
+                        <option value="WH">武汉</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top">个人描述:</td>
+                <td>
+                    <textarea name="txtIntro" cols="30" rows="10" placeholder="请输入中文字符最多不超过1000个"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input type="checkbox" name="chkUserInfo" id="pubInfo">
+                    <label for="pubInfo">
+                        不要公开我到个人信息
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <button>保存</button>
+                    <input type="reset" value="重置">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>
