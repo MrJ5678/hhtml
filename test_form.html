@@ -63,14 +63,30 @@
     </form>
     <hr>
     <form action="http://www.baidu.com" method="GET">
-        <table width="600px" border="1px" cellspacing="0" cellpadding="3" align="center">
+        <table width="700px" border="1px" cellspacing="0" cellpadding="3" align="center">
             <caption>修改个人信息</caption>
             <tr>
                 <td>姓名:</td>
                 <td>
                     <input type="text" name="txtUsername" value="">
                 </td>
-                <td rowspan="7" valign="top">各项技能指数</td>
+                <td rowspan="7" valign="top">
+                    <details>
+                        <summary>
+                            各项
+                                <mark>技能</mark>
+                            指数
+                        </summary>
+                            HTML 
+                            <meter min="0" max="100" value="100">该浏览器不支持meter</meter>
+                            <br>
+                            CSS
+                            <meter min="0" max="100" value="85">该浏览器不支持meter</meter>
+                            <br>
+                            JAVASCRIPT
+                            <meter min="0" max="100" value="70">该浏览器不支持meter</meter>
+                    </details>
+                </td>
             </tr>
             <tr>
                 <td>性别:</td>
