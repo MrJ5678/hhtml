@@ -33,13 +33,23 @@
         } */
 
         #pictureswrapper {
-            width: 300px;
-            height: 100px;
-            overflow: auto;
+            width: 500px;
+            height: 150px;
+            overflow-x: auto;
+            border: 1px solid #000;
         }
-        #picturedisplayarea {
-            width: 550px;
-            height: 70px;
+        #pictureswrapper p {
+            width: 800px;
+            height: 100px;
+        }
+        #picturedisplayarea img {
+            width: 100px;
+            border-radius: 5px;
+            border: 1px solid transparent;
+        }
+        #picturedisplayarea img:hover {
+            border: 1px solid red;
+            border-radius: 3px;
         }
     </style>
     <link rel="stylesheet" href="./testam.css">
@@ -57,7 +67,7 @@
     </div>
     <hr>
     <div id="pictureswrapper">
-        <div id="picturedisplayarea">
+        <p id="picturedisplayarea">
             <img src="./imgs/p_small_001.jpg" alt="">
             <img src="./imgs/p_small_002.jpg" alt="">
             <img src="./imgs/p_small_003.jpg" alt="">
@@ -65,7 +75,7 @@
             <img src="./imgs/p_small_005.jpg" alt="">
             <img src="./imgs/p_small_006.jpg" alt="">
             <img src="./imgs/p_small_007.jpg" alt="">
-        </div>
+        </p>
     </div>
 </body>
 </html>
