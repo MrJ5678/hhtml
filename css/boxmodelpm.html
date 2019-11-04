@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #d1, #d2 {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+        }
+        #d2 {
+            background-color: blue;
+            border-top: 1px solid transparent;
+            /* box-sizing: border-box; */
+            height: 199px;
+        }
+        #d3 {
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+            margin-top: 20px;
+        }
+        a {
+            margin-top: 20px;
+            /* margin-left: 20px; */
+        }
+        #d4 {
+            border: 1px solid #000;
+        }
+        #d5 {
+            border: 1px solid #f00;
+            padding: 20px;
+        }
+        #d6 {
+            border: 1px solid #000;
+        }
+        #s1 {
+            border: 1px solid blue;
+            padding: 20px;
+        }
+        #d7 {
+            border: 1px solid #000;
+        }
+        #d7 img {
+            border: 1px solid blue;
+            /* padding: 20px; */
+            vertical-align: bottom;
+        }
+        #d8 {
+            border: 2px dotted #000;
+            margin-top: 30px;
+            background-color: pink;
+            padding: 30px;
+        }
+        #d9 {
+            border: 1px dotted #000;
+            box-sizing: border-box;
+            width: 200px;
+            height: 200px;
+            background-image: url(../img/cssmodelimg/jd_logo.png);
+            background-repeat: no-repeat;
+            background-position: 0px 0px;
+        }
+        body {
+            background-image: url(../img/cssmodelimg/jd_show.png);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: right bottom;
+            
+        }
+    </style>
+</head>
+<body>
+    <!-- 边框----距离产生美 -->
+    <!--外边距溢出:加table或者为父元素加边框（透明） -->
+    <!-- 为行内元素设置上下外边距无效，为行内块元素设置上下外边距整行内容都跟着变动 -->
+    <!-- 为行内元素和行内块元素设置内边距时不会撑起其外部元素 -->
+    <div id="d1">d1文本</div>
+    <div id="d2">
+        <!-- <table></table> -->
+        <div id="d3">d3文本</div>
+    </div>
+    <a href="">csdn</a>
+    <a href="">百度</a>
+    用户名:<input type="text">
+    <div id="d4">
+        <div id="d5">这是div5的测试文本</div>
+    </div>
+    <div id="d6">
+        <span id="s1">这是span标记的测试文本</span>
+    </div>
+    <div id="d7">
+        <img src="https://ss1.baidu.com/9vo3dSag_xI4khGko9WTAnF6hhy/image/h%3D300/sign=92afee66fd36afc3110c39658318eb85/908fa0ec08fa513db777cf78376d55fbb3fbd9b3.jpg" alt="">
+    </div>
+    <div style="height: 300px"></div>
+    <div id="d8">这是d8测试文本</div>
+    <div style="height: 200px"></div>
+    <div id="d9"></div>
+    <div style="height: 6000px"></div>
+</body>
+</html>
