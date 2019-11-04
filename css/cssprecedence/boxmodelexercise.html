@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #comment {
+            width: 90%;
+            min-height: 100px;
+            border: 1px solid #d0e4c2;
+        }
+        #pages {
+            margin-top: 10px;
+        }
+        #pages a {
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            padding: 3px 10px;
+        }
+        #pages a.current {
+            border: 0;
+        }
+
+        #comment {
+            background-color: #fcfffa;
+        }
+        #pages a:hover {
+            background-color: #005aa0;
+            color: #ffffff;
+        }
+        #pages a.current {
+            background-color: transparent;
+            color: #000;
+        }
+        #comment {
+            padding: 10px;
+        }
+        #comment>div.topic {
+            /* 下边框 */
+            border-bottom: 1px solid #d0e4c2;
+            /* 设置内边距 */
+            padding: 0 0 5px 5px;
+        }
+        #comment div.fivestars {
+            /* 五颗星宽高,背景(url,position) */
+            width: 76px;
+            height: 15px;
+            background: url(../../img/cssmodelimg/iconlist_1.png) no-repeat -108px -238px;
+        }
+        #comment b {
+            background-color: #fdedd2;
+            padding: 5px 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="comment">
+        <!-- 五颗星星 -->
+        <div class="topic">
+            <div class="fivestars"></div>
+        </div>
+        <!-- 评论内容 -->
+            <!-- 标签 -->
+        <p>
+            标&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;签 :
+            <b>比洗衣粉好</b>
+            <b>去污能力强</b>
+        </p>
+            <!-- 心得 -->
+        <p>
+            心&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;得 :
+            买了好几次了，挺好用的，洗的衣服很干净，以后就它了！
+        </p>
+            <!-- 购买日期 -->
+        <p>
+            购&nbsp;买&nbsp;日&nbsp;期&nbsp;:
+            2014-12-01
+        </p>
+    </div>
+    <div id="pages">
+        <a class="current">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+        <a href="#">6</a>
+    </div>
+</body>
+</html>
