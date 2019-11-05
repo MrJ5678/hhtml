@@ -18,6 +18,9 @@
             border: 1px solid #ccc;
             border-radius: 3px;
             padding: 3px 10px;
+            color: #005aa0;
+            text-decoration: none;
+            font-size: 12px;
         }
         #pages a.current {
             border: 0;
@@ -32,7 +35,8 @@
         }
         #pages a.current {
             background-color: transparent;
-            color: #000;
+            color: #f60;
+            font-weight: bold;
         }
         #comment {
             padding: 10px;
@@ -53,10 +57,14 @@
             background-color: #fdedd2;
             padding: 5px 10px;
         }
-        #button {
-            margin-top: 20px;
+        p.button {
+            margin-bottom: 0;
+            text-align: right;
         }
-        #button span {
+        button {
+            font-size: 12px;
+        }
+        button  {
             /* 宽度，高度，边框，倒角，渐变背景，右边距 */
             width: 80px;
             height: 37px;
@@ -67,6 +75,24 @@
             border-radius: 3px;
             border: 1px solid #cfd1d0;
             background-image: linear-gradient(0deg, #d6d8d7, #f9f9f9)
+        }
+        p {
+            font-size: 12px;
+        }
+        p>span.left {
+            color: #9b9b9b;
+        }
+        p>span.right {
+            color: #656764;
+        }
+        b {
+            font-weight: normal;
+            color: #363a3d;
+        }
+        #pages {
+            width: 90%;
+            padding: 0 10px;
+            text-align: right;
         }
     </style>
 </head>
@@ -79,32 +105,34 @@
         <!-- 评论内容 -->
             <!-- 标签 -->
         <p>
-            标&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;签 :
+            <span class="left">标&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;签 :</span>
             <b>比洗衣粉好</b>
             <b>去污能力强</b>
         </p>
             <!-- 心得 -->
         <p>
-            心&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;得 :
-            买了好几次了，挺好用的，洗的衣服很干净，以后就它了！
+            <span class="left">心&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;得 :</span>
+            <span class="right">买了好几次了，挺好用的，洗的衣服很干净，以后就它了！</span>
         </p>
             <!-- 购买日期 -->
         <p>
-            购&nbsp;买&nbsp;日&nbsp;期&nbsp;:
-            2014-12-01
+            <span class="left">购&nbsp;买&nbsp;日&nbsp;期&nbsp;:</span>
+            <span class="right">2014-12-01</span>
         </p>
-        <p id="button">
-            <span>有用(3)</span>
-            <span>回复(2)</span>
+        <p class="button">
+            <button>有用(3)</button>
+            <button>回复(2)</button>
         </p>
     </div>
     <div id="pages">
-        <a class="current">1</a>
-        <a href="#">2</a>
-        <a href="#">3</a>
-        <a href="#">4</a>
-        <a href="#">5</a>
-        <a href="#">6</a>
+        <div class="pageswrapper">
+            <a class="current">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
+            <a href="#">6</a>
+        </div>
     </div>
 </body>
 </html>
