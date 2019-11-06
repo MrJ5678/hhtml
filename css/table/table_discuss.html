@@ -19,6 +19,30 @@
             border-top: 2px solid #9a9a9a;
             background-color: #f7f7f7;
         }
+        div.mt a {
+            float: left;
+            width: 100px;
+            height: 30px;
+            color: #005ca4;
+            text-decoration: none;
+            text-align: center;
+            line-height: 30px;
+            font-family: "微软雅黑"
+        }
+        div.mt a:hover {
+            color: red;
+        }
+        div.mt a.current {
+            margin-top: -6px;
+            margin-bottom: -6px;
+            color: red;
+            border-top: 2px solid red;
+            border-left: 1px solid #dcdcdc;
+            border-right: 1px solid #dcdcdc;
+            background-color: #fff;
+            height: 35px;
+            line-height: 35px;
+        }
         #discuss-content {
             border-bottom: 1px solid #dcdcdc;
             padding-bottom: 2px;
@@ -87,6 +111,11 @@
         <!-- 页签 -->
         <div class="mt">
             <!-- height: 30px; border: ; background-color: ;-->
+            <a href="#">网友讨论圈</a>
+            <a class="current" href="#">晒单帖</a>
+            <a href="#">讨论帖</a>
+            <a href="#">问答帖</a>
+            <a href="#">圈子站</a>
         </div>
         <!-- 内容 -->
         <div id="discuss-content">
