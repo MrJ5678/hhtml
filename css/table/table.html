@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        table {
+            border: 1px solid #000;
+            /* 注意border-collapse是在table里设置而非在td中设置 */
+            border-collapse:collapse;
+            /* 设置 border-spacing生效的前提是border-collapse的值为seperate（即为默认值）*/
+            /* border-spacing也是在table中设置 */
+            /* border-spacing: 10px 5px; */
+            /* 设置标题在表格下方显示 */
+            /* caption-side: bottom; */
+            width: 400px;
+            /* 设置表格显示规则为固定表格布局 */
+            table-layout: fixed;
+        }
+        td {
+            border: 1px solid #000;
+            width: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <caption>前端开发技术栈</caption>
+        <tr>
+            <td>html5 bootstrap sass less stylus grid css in js html5 bootstrap sass less stylus grid css in js html5 bootstrap sass less stylus grid css in js html5 bootstrap sass less stylus grid css in js html5 bootstrap sass less stylus grid css in js</td>
+            <td>css3</td>
+            <td>js</td>
+            <td>vue</td>
+        </tr>
+        <tr>
+            <td>webpack</td>
+            <td>ts</td>
+            <td>nodejs</td>
+            <td>react</td>
+        </tr>
+        <tr>
+            <td>dom</td>
+            <td>bom</td>
+            <td>jq</td>
+            <td>mpvue</td>
+        </tr>
+    </table>
+</body>
+
+</html>
