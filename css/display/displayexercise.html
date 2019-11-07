@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #nav {
+            width: 990px;
+            height: 40px;
+            background-color: #e64346;
+            margin: 0 auto;
+        }
+
+        #nav > p {
+            width: 210px;
+            height: 40px;
+            background-color: #cd2a2c;
+        }
+        #nav > p a {
+            /* 行高，左内边距，文本颜色，取消下划线，文字加醋 */
+            /* 文本居中用line-height = 行高 */
+            line-height: 40px;
+            padding-left: 20px;
+            color:#fff;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 14px;
+        }
+        #nav > p > i.icon-select-down {
+            float: right;
+            width: 20px;
+            height: 20px;
+            /* 将向下箭头图标 向下移动10px 向左移动10px */
+            /* 移动雪碧图标用margin */
+            margin: 10px 10px 0 0;
+            background: url(./img/iconlist_2.png) -65px 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav id="nav">
+        <p>
+            <a href="#">全部商品分类</a>
+            <i class="icon-select-down"></i>
+        </p>
+    </nav>
+</body>
+
+</html>
