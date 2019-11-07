@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        a {
+            border: 1px solid #000;
+            width: 100px;
+            height: 100px;
+        }
+
+        #d1 {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            opacity: 0.3;
+        }
+        #d2 {
+            border: 1px solid #000;
+        }
+        #d2 img{
+            /* vertical-align: bottom; */
+            cursor: crosshair;
+        }
+        .test-a {
+            background-color: red;
+            padding-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <a href="#">默认a元素</a>
+    <a href="#" style="display: inline">display: inline;</a>
+    <a href="#" style="display: block">display: block;</a>
+    <a href="#" style="display: none">display: none;</a>
+    <a href="#" style="display: inline-block">display: inline-block;</a>
+    <a href="#">默认a元素</a>
+    <div style="height: 100px"></div>
+    <div id="d1">
+        <h3>半透明元素</h3>
+    </div>
+    <div style="height: 100px"></div>
+    <div id="d2">
+        <img src="https://ss3.baidu.com/-fo3dSag_xI4khGko9WTAnF6hhy/image/h%3D300/sign=b5e4c905865494ee982209191df4e0e1/c2cec3fdfc03924590b2a9b58d94a4c27d1e2500.jpg" alt="">
+        <span>jjyy</span>
+    </div>
+    <a class="test-a" href="#">测试文本</a>
+</body>
+</html>
