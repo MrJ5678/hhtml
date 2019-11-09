@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #box {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        #box li {
+            float: left;
+            width: 100px;
+            background-color: red;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            margin-left: 10px;
+            border: 1px solid #000;
+            cursor: pointer;
+        }
+        #box li:hover {
+            /* 相对定位， 右下移动 */
+            position: relative;
+            top: 5px;
+            left: 5px;
+        }
+    </style>
+</head>
+<body>
+    <ul id="box">
+        <li>测试1</li>
+        <li>测试2</li>
+        <li>测试3</li>
+        <li>测试4</li>
+    </ul>
+</body>
+</html>
