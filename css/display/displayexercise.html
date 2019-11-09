@@ -77,24 +77,46 @@
             padding: 0;
             padding-top: 5px;
             box-sizing: border-box;
+            position: relative;
         }
         #main ul li {
-            width: 186px;
-            padding: 5px 0 5px 10px;
-            border-bottom: 1px solid #fff;
-            border-top: 1px solid transparent;
+            
         }
         #main ul li:hover {
-            border: 1px solid #dddddd;
-            border-left: 0;
-            border-right: 0;
-            background-color: #fff;
+            
         }
         #main ul li a {
             color: #333333;
             text-decoration: none;
             font-weight: 300;
             font-size: 14px;
+        }
+        #cate_box div.cate_box_popmenu {
+            position: absolute;
+            top: 0;
+            left: 195px;
+            width: 700px;
+            height: 400px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            z-index: 10;
+        }
+        #cate_box li a {
+            /* 将li中的效果移植到a中 */
+            display: inline-block;
+            width: 186px;
+            padding: 5px 0 5px 10px;
+            border-bottom: 1px solid #fff;
+            border-top: 1px solid transparent;
+        }
+        #cate_box li a:hover {
+            /* 从li中移植过来的属性 */
+            border: 1px solid #dddddd;
+            border-left: 0;
+            border-right: 0;
+            background-color: #fff;
+            position: relative;
+            z-index: 30;
         }
     </style>
 </head>
@@ -136,6 +158,8 @@
             </li>
             <li>
                 <a href="#">家用电器</a>
+                <!-- 弹出菜单 -->
+                <div class="cate_box_popmenu">弹出菜单</div>
             </li>
         </ul>
     </div>
