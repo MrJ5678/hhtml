@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #d1,
+        #d2,
+        #d3 {
+            width: 200px;
+            height: 200px;
+
+            position: absolute;
+            top: 200px;
+            left: 400px;
+        }
+        #d1 {
+            background-color: red;
+            top: 240px;
+            left: 440px;
+            z-index: 1000;
+        }
+        #d2 {
+            background-color: green;
+            top: 220px;
+            left: 420px;
+            z-index: 800;
+        }
+        #d3 {
+            background-color: blue;
+            z-index: 900;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="d1"></div>
+    <div id="d2"></div>
+    <div id="d3"></div>
+</body>
+
+</html>
