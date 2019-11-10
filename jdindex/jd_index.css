@@ -1,0 +1,97 @@
+/* 测试属性 */
+#top_main, #nav, #banner, #main, #footer_box,#footer {
+    border: 1px solid #000;
+}
+/* 页面通用样式 */
+body {
+    font: 12px "微软雅黑",Arial,Helvetica,sans-serif;
+    color: #666;
+    margin: 0;
+}
+p,h1,h2,h3,h4,h5,h6,ul,ol,dl,dt,dd {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.lf {
+    float: left;
+}
+.rt {
+    float: right;
+}
+.clear {
+    clear: both;
+}
+a {
+    text-decoration: none;
+    color: #666;
+}
+a:hover {
+    color: #ff0700;
+    text-decoration: underline;
+}
+/* 布局样式 */
+#top_box, #top_main, #nav, #banner, #main, #footer_box,#footer {
+    width: 1211px;
+    margin: 0 auto;
+}
+/* 页面顶部灰色长条 */
+#top {
+    /* 宽度，高度，背景颜色 */
+    width: 100%;
+    height: 30px;
+    background-color: #f7f7f7;
+    line-height: 30px;
+}
+#top_box {
+    width: 1211px;
+    height: 30px;
+}
+#top_box > img {
+    /* 上外边距，右外边距 */
+    margin-top: 9px;
+    margin-right: 5px;
+}
+#top_box > ul > li {
+    float: left;
+    color: #666;
+    margin-right: 5px;
+}
+#top_box > ul > li > b {
+    border-right: 1px solid #ddd;
+    margin-right: 5px;
+}
+/* 会员俱乐部背景图像处理 */
+li.vip a {
+    padding-left: 29px;
+    background: url(./Images/vip.jpg) no-repeat left center;
+}
+/* 大客户背景图像处理 */
+li.dakehu a {
+    padding-left: 26px;
+    background: url(./Images/dakehu.jpg) no-repeat left center;
+}
+/* 手机图片背景图处理 */
+li.phone a {
+    /* 左内边距， 高度， 行高，背景 */
+    display: inline-block;
+    padding-left: 18px;
+    height: 22px;
+    line-height: 22px;
+    background: url(./Images/iconlist_2.png) no-repeat -128px -360px;
+}
+li.phone a:hover {
+    /* 左内边距， 高度， 行高，背景 */
+    display: inline-block;
+    padding-left: 18px;
+    height: 22px;
+    line-height: 22px;
+    background: url(./Images/iconlist_2.png) no-repeat -128px -399px;
+}
+li.customservise a {
+    padding-right: 10px;
+    background: url(./Images/jt_down.jpg) no-repeat 50px 5px;
+}
+li.customservise b {
+    margin-right: 12px !important;
+}
