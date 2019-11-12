@@ -82,16 +82,47 @@ li.phone a {
 }
 li.phone a:hover {
     /* 左内边距， 高度， 行高，背景 */
+    background-position:  -128px -399px;
+}
+/* 客户服务 */
+li.customservise > a {
+    /* 左右内边距模拟宽度 */
+    padding: 0 15px;
+    /* 行内块，高度，行高 */
     display: inline-block;
-    padding-left: 18px;
-    height: 22px;
-    line-height: 22px;
-    background: url(./Images/iconlist_2.png) no-repeat -128px -399px;
+    height: 26px;
+    line-height: 26px;
+    /* 边框：左右上（透明） */
+    border: 1px solid transparent;
+    border-bottom: 0;
+    /* 背景 */
+    background: url(./Images/jt_down.jpg) no-repeat 95% center;
 }
-li.customservise a {
-    padding-right: 10px;
-    background: url(./Images/jt_down.jpg) no-repeat 50px 5px;
+li.customservise > a:hover {
+    
 }
-li.customservise b {
-    margin-right: 12px !important;
+li.customservise {
+    position: relative;
+}
+li.customservise:hover #service_items{
+    display: block;
+}
+/* 客户服务弹出菜单 */
+#service_items {
+    /* 宽度，左右下的边框，背景颜色 */
+    width: 80px;
+    border: 1px solid #ddd;
+    border-top: 0;
+    background-color: #fff;
+    box-sizing: border-box;
+    text-align: center;
+    position: absolute;
+    top: 28px;
+    left: 6px;
+    display: none;
+}
+li.customservise:hover > a {
+    border-color: #ddd;
+    background-color: #fff;
+    background-image: url(./Images/jt_up.jpg);
 }
