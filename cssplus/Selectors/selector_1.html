@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #d1 + p {
+            background-color: red;
+        }
+        #d1 ~ p {
+            color: goldenrod;
+        }
+        #d1 ~ .bigsize {
+            font-size: 24pt;
+        }
+    </style>
+</head>
+<body>
+    <div id="d1">这是一个div</div>
+    <p>div的兄弟1</p>
+    <p>div的兄弟2</p>
+    <p class="bigsize">div的兄弟3</p>
+    <p class="bigsize">div的兄弟4</p>
+</body>
+</html>

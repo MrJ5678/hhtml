@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        [id] {
+            color: red;
+        }
+        div[id] {
+            background-color: blue;
+        }
+        div[class ~= heavy] {
+            font-weight: bold;
+        }
+        p[class ^= col] {
+            border: 1px solid #000;
+        }
+        [class *= red] {
+            font-weight: 700;
+        }
+        [id $= '1'] {
+            font-size: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div id="d1">id为d1的元素</div>
+    <div class="heavy important">class属性为heavy和important的元素</div>
+    <p id="p1">id为p1的p元素</p>
+    <span id="s1">id为s1的span元素</span>
+    <p class="col-red-1">col-red-1</p>
+    <p class="col-red-2">col-red-2</p>
+    <p class="col-red-3">col-red-3</p>
+</body>
+</html>
