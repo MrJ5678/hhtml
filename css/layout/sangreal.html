@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .con {
+            width: 1120px;
+            margin: 0 auto;
+        }
+
+        .header {
+            height: 150px;
+            background-color: orange;
+        }
+
+        .content {
+            height: 500px;
+            background-color: green;
+            padding-left: 100px;
+            padding-right: 150px;
+        }
+
+        .content .left {
+            height: 500px;
+            width: 100px;
+            float: left;
+            background-color: blue;
+            margin-left: -100%;
+            position: relative;
+            left: -100px;
+        }
+
+        .content .right {
+            height: 500px;
+            width: 150px;
+            float: left;
+            margin-left: -150px;
+            background-color: purple;
+            position: relative;
+            right: -150px;
+        }
+
+        .content .middle {
+            height: 500px;
+            background-color: gold;
+            float: left;
+            width: 100%;
+        }
+
+        .fx {
+            clear: both;
+        }
+
+        .footer {
+            height: 150px;
+            background-color: yellow;
+        }
+
+        /* .content .right {
+            width: 150px;
+        }
+        .middle {
+            width: 100%;
+            height: 300px;
+            float: left;
+            background-color: red;
+        }
+
+        .fx {
+            clear: both;
+        } */
+    </style>
+</head>
+
+<body>
+    <div class="con">
+        <div class="header">
+            header
+        </div>
+
+        <div class="content">
+            <div class="middle">
+                中
+            </div>
+            <div class="left">
+                左
+            </div>
+            <div class="right">
+                右
+            </div>
+
+            <div class="fx">
+            </div>
+        </div>
+
+        <div class="footer">
+            copyright
+        </div>
+    </div>
+</body>
+
+</html>
