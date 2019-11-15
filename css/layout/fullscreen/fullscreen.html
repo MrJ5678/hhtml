@@ -8,9 +8,51 @@
     <style>
         html, body {
             margin: 0;
+            overflow: hidden;
         }
         header {
             height: 100px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+
+            background-color: lightgrey;
+        }
+        .content {
+            position: fixed;
+            left: 0;
+            right: 0;
+            top: 100px;
+            bottom: 100px;
+            overflow: auto;
+
+            background-color: lightblue;
+        }
+        .content .left {
+            width: 300px;
+            height: 100%;
+
+            position: fixed;
+            top: 100px;
+            bottom: 100px;
+            left: 0;
+
+            background-color: lightcoral;
+        }
+        .content .right {
+            margin-left: 300px;
+            height: 100%;
+            background-color: greenyellow;
+        }
+        footer {
+            height: 100px;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+
+            background-color: lightslategrey;
         }
     </style>
 </head>
